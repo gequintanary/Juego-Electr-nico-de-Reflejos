@@ -19,13 +19,11 @@ de un sistema electrónico de reflejos basado en <strong>NE555, diodos, transist
 | `04-lista-de-materiales-bom/` | Lista de materiales y especificaciones. |
 | `05-memoria-de-calculos/` | Cálculos de diseño y justificación técnica. |
 | `06-evidencia-de-simulacion/` | Simulaciones y validación previa al prototipo. |
-| `07-fotografias-del-prototipo/` | Registro visual del armado físico. |
-| `08-tabla-de-mediciones/` | Mediciones experimentales del sistema. |
-| `09-video-de-funcionamiento/` | Evidencia audiovisual de operación (3–5 min). |
-| `10-presentacion-y-defensa-tecnica/` | Material de exposición y defensa del proyecto. |
+| `07-tabla-de-mediciones/` | Mediciones experimentales del sistema. |
+| `08-presentacion-y-defensa-tecnica/` | Material de exposición y defensa del proyecto. |
 
 ---
 
 ## 🎯 Objetivo
 
-Organizar de forma clara y formal toda la documentación técnica del **Juego Electrónico de Reflejos** para facilitar su revisión académica y su trazabilidad de diseño.
+Diseñar, analizar, simular, construir y validar un juego electrónico de reflejos utilizando principalmente electrónica analógica basada en NE555, diodos, transistores y componentes discretos. 
