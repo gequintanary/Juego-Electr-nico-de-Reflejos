@@ -19,8 +19,7 @@ de un sistema electrónico de reflejos basado en <strong>NE555, diodos, transist
 | `04-lista-de-materiales-bom/` | Lista de materiales y especificaciones. |
 | `05-memoria-de-calculos/` | Cálculos de diseño y justificación técnica. |
 | `06-evidencia-de-simulacion/` | Simulaciones y validación previa al prototipo. |
-| `07-tabla-de-mediciones/` | Mediciones experimentales del sistema. |
-| `08-presentacion-y-defensa-tecnica/` | Material de exposición y defensa del proyecto. |
+| `07-presentacion-y-defensa-tecnica/` | Material de exposición y defensa del proyecto. |
 
 ---
 
