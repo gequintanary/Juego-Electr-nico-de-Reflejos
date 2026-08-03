@@ -9,10 +9,14 @@ de un sistema electrónico de reflejos basado en <strong>NE555, diodos, transist
 
 ---
 
+<div align="center">
+  
 ## 📁 Estructura del repositorio
 
+
+
 | Carpeta | Contenido |
-|---|---|
+| :--- | :--- |
 | `01-documento-tecnico/` | Documento técnico integral del proyecto. |
 | `02-diagrama-de-bloques/` | Vista funcional por módulos del sistema. |
 | `03-esquematico/` | Esquemas eléctricos del circuito. |
@@ -20,6 +24,8 @@ de un sistema electrónico de reflejos basado en <strong>NE555, diodos, transist
 | `05-memoria-de-calculos/` | Cálculos de diseño y justificación técnica. |
 | `06-evidencia-de-simulacion/` | Simulaciones y validación previa al prototipo. |
 | `07-presentacion-y-defensa-tecnica/` | Material de exposición y defensa del proyecto. |
+
+</div>
 
 ---
 
