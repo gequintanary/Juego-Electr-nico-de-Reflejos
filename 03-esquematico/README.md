@@ -13,6 +13,7 @@ Todo el circuito se alimenta con una fuente de **5 V de corriente continua (VCC)
 
 El **botón de inicio** está conectado al **Pin 2 (Trigger)** del circuito integrado **NE555** a través del diodo **D2 (1N4148)**. En condiciones normales (iniciales), la resistencia **R1 (10 kΩ)** mantiene este pin en un nivel alto (5 V). Cuando el usuario presiona el botón, el voltaje del Pin 2 cae a **0 V**, generando la señal que activa el temporizador e inicia el juego.
 
+--- 
 
 ### 2. Etapa de temporización (NE555)
 
@@ -22,6 +23,7 @@ El tiempo durante el cual el juego permanece activo depende de la resistencia **
 
 Además, el capacitor **C2 (100 nF)** conectado al Pin 5 filtra pequeñas variaciones de voltaje, proporcionando un funcionamiento más estable del temporizador.
 
+--- 
 
 ### 3. Etapa de indicadores visuales
 
@@ -33,6 +35,7 @@ El **Pin 3** del **NE555** controla el funcionamiento de los dos LED principales
 
 De esta manera, ambos LED informan visualmente cuándo es posible responder y cuándo el tiempo ha finalizado.
 
+--- 
 
 ### 4. Etapa de validación de la respuesta
 
@@ -42,6 +45,7 @@ Si el usuario presiona el botón dentro de ese intervalo, la señal pasa a trav�
 
 La resistencia **R5 (10 kΩ)** mantiene la base del transistor en **0 V** cuando el botón no está presionado, evitando activaciones accidentales provocadas por cambios en la señal.
 
+--- 
 
 ### 5. Etapa de salida
 
