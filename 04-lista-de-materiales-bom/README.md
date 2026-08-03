@@ -11,7 +11,7 @@ Cantidad   Componente / Descripción                 Valor / Referencia
   (2x)     Diodos Semiconductores                   1N4148
   (1x)     Zumbador Piezoeléctrico / Sounder        -
   (2x)     Pulsadores (Push-Buttons)                SPST N.O.
-  (1x)     Capacitor electrolítico                  100 µF
+  (1x)     Capacitor electrolítico                  10 µF
   (1x)     Capacitor cerámico                       100 nF
   (3x)     Resistencia                              220 Ω
   (1x)     Resistencia                              1 kΩ
