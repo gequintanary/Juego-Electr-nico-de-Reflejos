@@ -14,7 +14,7 @@ El circuito se alimenta mediante una fuente regulada de 5V de corriente continua
 ### Cálculo del consumo máximo teórico
 Para estimar el consumo máximo del circuito, se considera la corriente del NE555 en reposo, la corriente de los LED encendidos y la corriente que circula por el transistor cuando activa la carga. Con ello se obtiene una corriente total aproximada de:
 
-$$I_{\text{total}} = I_{\text{555}} + I_{D1} + I_{D5} + I_{C}$$
+$$I_{\text{total}} = I_{\text{555}} + I_{LED1R} + I_{LED1V} + I_{C}$$
 
 $$I_{\text{total}} = 3\text{mA} + 13\text{mA} + 13\text{mA} + 22.27\text{mA} = 51.27\text{mA}$$
 
@@ -89,10 +89,10 @@ $$I_{\text{pull-up}} = \frac{V_{CC}}{R_1} = \frac{5\text{V}}{10\text{k}\Omega} =
 
 La corriente de 0.5 mA es suficiente para mantener estable el nivel lógico del pin de disparo sin aumentar de forma significativa el consumo de energía. De esta manera, el NE555 permanece en reposo hasta que el usuario presione el botón.
 
-### Resistencia de Pull-Down de base con botón 2 (R7)
-La resistencia R7 mantiene la base del transistor Q1 en nivel bajo (0V) cuando el segundo botón no está presionado, evitando encendidos accidentales:
+### Resistencia de Pull-Down de base con botón 2 (R5)
+La resistencia R5 mantiene la base del transistor Q1 en nivel bajo (0V) cuando el segundo botón no está presionado, evitando encendidos accidentales:
 
-$$R_7 = 10\text{k}\Omega$$
+$$R_5 = 10\text{k}\Omega$$
 
 ---
 
@@ -101,7 +101,7 @@ $$R_7 = 10\text{k}\Omega$$
 ### Corriente de carga/colector ($I_C$)
 Se calcula la corriente que circula por el colector considerando el consumo del sounder y del LED de salida:
 
-$$I_{D4} = \frac{V_{CC} - V_{D4} - V_{CE}}{R_5} = \frac{5\text{V} - 2.1\text{V} - 0.2\text{V}}{220\Omega} = 12.27\text{mA}$$
+$$I_{LED2V} = \frac{V_{CC} - V_{LED2V} - V_{CE}}{R_7} = \frac{5\text{V} - 2.1\text{V} - 0.2\text{V}}{220\Omega} = 12.27\text{mA}$$
 
 $$I_C = I_{\text{sounder}} + I_{D4} = 10\text{mA} + 12.27\text{mA} = 22.27\text{mA}$$
 
@@ -139,7 +139,7 @@ Como la corriente de base disponible es mayor que la mínima requerida, se garan
 
 Para garantizar un funcionamiento seguro de los LEDs, se diseñó el circuito para que cada uno opere con una corriente aproximada de 13 mA, valor suficiente para obtener una buena intensidad sin comprometer su vida útil.
 
-### Resistencia limitadora para D1, D4, D5 (R3, R5, R6):
+### Resistencia limitadora para LED1R, LED1V y LED2V (R3, R6, R7):
 
 $$R = \frac{V_{\text{fuente}} - V_f}{I_D} = \frac{5\text{V} - 2.1\text{V}}{13\text{mA}} = \frac{2.9\text{V}}{0.013\text{A}} \approx 223\Omega \approx 220\Omega$$
 
