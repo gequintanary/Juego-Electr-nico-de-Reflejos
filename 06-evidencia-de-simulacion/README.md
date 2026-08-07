@@ -58,7 +58,9 @@ Fig 12. Medición del voltaje en el transistor 2N2222 y en el diodo 1N4148 duran
 
 
 
-**VIDEO**
+**VIDEO** Y ****ARCHIVO DE LA SIMULACIÓN****
+
+[Proyecto Reflejos.zip](https://github.com/user-attachments/files/30809910/Proyecto.Reflejos.zip)
 
 https://github.com/user-attachments/assets/e7d81720-b110-4fce-86c7-c1d413f1fb88
 
