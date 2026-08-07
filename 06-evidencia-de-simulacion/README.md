@@ -62,8 +62,8 @@ Fig 12. Medición del voltaje en el transistor 2N2222 y en el diodo 1N4148 duran
 
 https://github.com/user-attachments/assets/e7d81720-b110-4fce-86c7-c1d413f1fb88
 
-Secuencia de funcionamiento del circuito
-1. Estado de reposo (0:00 – 0:06)
+**Secuencia de funcionamiento del circuito**
+**1. Estado de reposo (0:00 – 0:06)**
 
 Al energizar el circuito con una fuente de 5.00V, el temporizador NE555 permanece en estado de reposo, por lo que su salida (Pin 3) se mantiene en nivel bajo (0V).
 
@@ -71,7 +71,7 @@ En estas condiciones, la corriente circula a través del LED rojo (LED1R), mante
 
 ---
 
-2. Inicio del juego (0:06 – 0:07)
+**2. Inicio del juego (0:06 – 0:07)**
 
 Cuando el usuario presiona el botón de inicio, se genera un pulso de disparo en el Pin 2 (Trigger) del NE555.
 
@@ -81,7 +81,7 @@ Al mismo tiempo, el capacitor C1 inicia su proceso de carga a través de la resi
 
 ---
 
-3. Respuesta correcta del jugador (0:08 – 0:09)
+**3. Respuesta correcta del jugador (0:08 – 0:09)**
 
 Mientras el LED1V permanece encendido, el jugador presiona el segundo pulsador dentro del tiempo establecido.
 
@@ -95,7 +95,7 @@ Como resultado, se enciende el LED verde de acierto (LED2V) y se activa el zumba
 ---
 
 
-4. Finalización del ciclo (0:09 en adelante)
+**4. Finalización del ciclo (0:09 en adelante)**
 
 Una vez que el capacitor C1 alcanza aproximadamente 2/3 del voltaje de alimentación, el NE555 finaliza automáticamente el pulso de salida.
 
