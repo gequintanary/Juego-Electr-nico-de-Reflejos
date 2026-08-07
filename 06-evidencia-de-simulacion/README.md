@@ -55,3 +55,12 @@ Fig 11. Medición del voltaje y la corriente en el circuito mediante un voltíme
 <img width="862" height="515" alt="image" src="https://github.com/user-attachments/assets/660bbc37-4253-4d65-b0e2-858ce297c602" />
 Fig 12. Medición del voltaje en el transistor 2N2222 y en el diodo 1N4148 durante una respuesta correcta del juego. Se registra un voltaje Colector-Emisor (VCE) de 0.36 V, indicando que el transistor se encuentra en saturación, y una caída de tensión de 0.70 V en el diodo 1N4148, valor esperado para su funcionamiento en polarización directa.
 
+
+
+
+**VIDEO**
+
+https://github.com/user-attachments/assets/e7d81720-b110-4fce-86c7-c1d413f1fb88
+
+
+
