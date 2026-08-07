@@ -62,5 +62,45 @@ Fig 12. Medición del voltaje en el transistor 2N2222 y en el diodo 1N4148 duran
 
 https://github.com/user-attachments/assets/e7d81720-b110-4fce-86c7-c1d413f1fb88
 
+Secuencia de funcionamiento del circuito
+1. Estado de reposo (0:00 – 0:06)
+
+Al energizar el circuito con una fuente de 5.00V, el temporizador NE555 permanece en estado de reposo, por lo que su salida (Pin 3) se mantiene en nivel bajo (0V).
+
+En estas condiciones, la corriente circula a través del LED rojo (LED1R), manteniéndolo encendido e indicando que el sistema está listo para iniciar una nueva ronda. Mientras el temporizador permanece inactivo, el segundo pulsador no tiene alimentación, por lo que al presionarlo no ocurre ninguna acción.
+
+---
+
+2. Inicio del juego (0:06 – 0:07)
+
+Cuando el usuario presiona el botón de inicio, se genera un pulso de disparo en el Pin 2 (Trigger) del NE555.
+
+Como respuesta, la salida del temporizador (Pin 3) cambia inmediatamente a un nivel alto, registrando aproximadamente 4.88 V. Este cambio provoca que el LED rojo se apague y que el LED verde (LED1V) se encienda, indicando que ha comenzado la ventana de tiempo para responder.
+
+Al mismo tiempo, el capacitor C1 inicia su proceso de carga a través de la resistencia R2, con un intervalo de aproximadamente 0.517 segundos, durante el cual el jugador puede registrar una respuesta válida.
+
+---
+
+3. Respuesta correcta del jugador (0:08 – 0:09)
+
+Mientras el LED1V permanece encendido, el jugador presiona el segundo pulsador dentro del tiempo establecido.
+
+El voltaje presente en el Pin 3 del NE555 atraviesa el pulsador, el diodo D3 y la resistencia R4, llegando a la base del transistor Q1 (2N2222).
+
+Al recibir esta corriente, el transistor entra en saturación, permitiendo el paso de corriente hacia la carga. Este comportamiento se observa con la caída de voltaje entre colector y emisor de aproximadamente 0.36 V, indicando que esta funcionando como interruptor.
+
+Como resultado, se enciende el LED verde de acierto (LED2V) y se activa el zumbador piezoeléctrico, indicando que el jugador respondió correctamente dentro del tiempo permitido.
+
+
+---
+
+
+4. Finalización del ciclo (0:09 en adelante)
+
+Una vez que el capacitor C1 alcanza aproximadamente 2/3 del voltaje de alimentación, el NE555 finaliza automáticamente el pulso de salida.
+
+El Pin 3 vuelve a 0 V, apagando el LED verde y dejando sin alimentación el segundo pulsador. En consecuencia, el transistor Q1 deja de conducir corriente, por lo que el LED2V y el zumbador se desactivan.
+
+Finalmente, el LED rojo (LED1R) vuelve a encenderse, indicando que el circuito ha regresado a su estado inicial y se encuentra listo para comenzar una nueva ronda.
 
 
