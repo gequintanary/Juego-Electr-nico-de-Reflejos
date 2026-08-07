@@ -63,6 +63,7 @@ Fig 12. Medición del voltaje en el transistor 2N2222 y en el diodo 1N4148 duran
 https://github.com/user-attachments/assets/e7d81720-b110-4fce-86c7-c1d413f1fb88
 
 **Secuencia de funcionamiento del circuito**
+
 **1. Estado de reposo (0:00 – 0:06)**
 
 Al energizar el circuito con una fuente de 5.00V, el temporizador NE555 permanece en estado de reposo, por lo que su salida (Pin 3) se mantiene en nivel bajo (0V).
